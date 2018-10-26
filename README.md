@@ -9,9 +9,9 @@ In this unit, coders will create a game to simulate guessing a safe's code. The 
 - [ ] Complete the project planning document.
 #### Set-Up
 - [x] Go to the repository at https://github.com/juliapohlmann/crackthesafe
-- [ ] Fork this repository to your github account and clone to a new workspace
-- [ ] Add, commit, and push your changes
-- [ ] Make your site live on gh-pages
+- [x] Fork this repository to your github account and clone to a new workspace
+- [x] Add, commit, and push your changes
+- [x] Make your site live on gh-pages
 
 ### HTML
 - [ ] Add any more HTML elements you will need to the page
@@ -27,11 +27,11 @@ In this unit, coders will create a game to simulate guessing a safe's code. The 
 
 ### Javascript 
 
-- [ ] Outside of your click handler, declare 4 variables (randomNumber1, randomNumber2, randomNumber3, randomNumber4) and generate a random number for each variable. Be sure to save these as strings though! 
-- [ ] Outside of your click handler, declare 4 variables (numberGuess1, numberGuess2, numberGuess3, numberGuess4) and assign them values of empty strings
-- [ ] Outside of your click handler, declare 2 variables (numbersCorrect, numbersInPlace) and assign them values of 0
-- [ ] In your click handler, store each input value in the corresponding numberGuess variable
-- [ ] In your click handler, display each input value in userChoice
+- [x] Outside of your click handler, declare 4 variables (randomNumber1, randomNumber2, randomNumber3, randomNumber4) and generate a random number for each variable. Be sure to save these as strings though! 
+- [x] Outside of your click handler, declare 4 variables (numberGuess1, numberGuess2, numberGuess3, numberGuess4) and assign them values of empty strings
+- [x] Outside of your click handler, declare 2 variables (numbersCorrect, numbersInPlace) and assign them values of 0
+- [x] In your click handler, store each input value in the corresponding numberGuess variable
+- [x] In your click handler, display each input value in userChoice
 #### Wrap
 - [ ] Push your changes!
 
