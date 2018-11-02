@@ -23,6 +23,7 @@ input
 
 .row{
   text-align:center;
+  /*background-image:radial-gradient(#000787, #007870);*/
   
 }
 #choices{
@@ -36,4 +37,3 @@ h4 {
     font-size: 20px;
     font-weight: bold;
 }
-
