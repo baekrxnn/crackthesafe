@@ -39,37 +39,48 @@ $(document).ready(function(){
         guessFour =  $("#number4").val();
         $("#userChoice").text(guessOne + guessTwo + guessThree + guessFour);
         
+        numbersCorrect=0;
+        numbersInPlace=0;
+        
         if (guessOne===randomNumber1) {
-            numbersInPlace+1
-        } else if((guessTwo===randomNumber1)
-                ||(guessTwo===randomNumber3)
-                ||(guessTwo===randomNumber4)) {
-                    numbersInPlace+1;
-            }
+            numbersInPlace++;
+            numbersCorrect++;
+        } else if((guessOne===randomNumber1)
+                ||(guessOne===randomNumber3)
+                ||(guessOne===randomNumber4)) {
+                    numbersCorrect++;
+        }
     
         if (guessTwo===randomNumber2) {
-            numbersInPlace+1
+            numbersInPlace++;
+            numbersCorrect++;
         } else if((guessTwo===randomNumber1)
                 ||(guessTwo===randomNumber3)
                 ||(guessTwo===randomNumber4)) {
-                    numbersInPlace+1;
-            }
+                    numbersCorrect++;
+        }
     
         if (guessThree===randomNumber3) {
-            numbersInPlace+1
+            numbersInPlace++;
+            numbersCorrect++;
         } else if((guessThree===randomNumber1)
                 ||(guessThree===randomNumber2)
                 ||(guessThree===randomNumber4)) {
-                    numbersInPlace+1
-            }
+                    numbersCorrect++;
+        }
     
         if (guessFour===randomNumber4) {
-            numbersInPlace+1;
+            numbersInPlace++;
+            numbersCorrect++;
         } else if((guessFour===randomNumber1)
                 ||(guessFour===randomNumber2)
                 ||(guessFour===randomNumber3)) {
-                    numbersInPlace+1;
-            }
+                    numbersCorrect++;
+        }
+        
+        console.log(numbersCorrect);
+        console.log(numbersInPlace);
+        
         $("#results_inplace").text("Numbers in place: " + numbersInPlace);
         $("#results_correct").text("Numbers correct: " +numbersCorrect);
         
@@ -82,13 +93,5 @@ $(document).ready(function(){
 
         
     });
-        $("#results_inplace").text("Numbers in place: " + numbersInPlace);
-        $("#results_correct").text("Numbers correct: " +numbersCorrect);
-        
-        if (numbersInPlace === 4){
-            alert("You've won!");
-        }
-    
-    console.log(guessOne);
-    console.log(randomNumber1);
+
 });
