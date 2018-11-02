@@ -31,8 +31,11 @@ $(document).ready(function(){
     fourth=Math.floor(Math.random()*10);
     let randomNumber4= fourth.toString();
 
+    let count=0;
 
     $("#verify").click(function () {
+        count++;
+        $("#counter").text("Counter: "+count);
         guessOne = $("#number1").val();
         guessTwo = $("#number2").val();
         guessThree = $("#number3").val();
@@ -41,6 +44,10 @@ $(document).ready(function(){
         
         numbersCorrect=0;
         numbersInPlace=0;
+        
+        if ((guessOne==="")||(guessTwo==="")||(guessThree==="")||(guessFour==="")) {
+            alert("Please complete all inputs");
+        }
         
         if (guessOne===randomNumber1) {
             numbersInPlace++;
