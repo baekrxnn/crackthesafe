@@ -34,20 +34,22 @@ $(document).ready(function(){
     let count=0;
 
     $("#verify").click(function () {
-        count++;
-        $("#counter").text("Counter: "+count);
         guessOne = $("#number1").val();
         guessTwo = $("#number2").val();
         guessThree = $("#number3").val();
         guessFour =  $("#number4").val();
         $("#userChoice").text(guessOne + guessTwo + guessThree + guessFour);
         
-        numbersCorrect=0;
-        numbersInPlace=0;
-        
         if ((guessOne==="")||(guessTwo==="")||(guessThree==="")||(guessFour==="")) {
             alert("Please complete all inputs");
+        } else {
+            count++;
+        $("#counter").text("Number of Guesses: "+count);
         }
+        
+        
+        numbersCorrect=0;
+        numbersInPlace=0;
         
         if (guessOne===randomNumber1) {
             numbersInPlace++;

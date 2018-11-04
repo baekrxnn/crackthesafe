@@ -27,6 +27,7 @@ input
 {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .row{
@@ -62,3 +63,4 @@ button {
     border-radius:1000px;
     font-size: 16px;
 }
+
