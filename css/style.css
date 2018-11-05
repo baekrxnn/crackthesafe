@@ -1,5 +1,5 @@
 body {
-    background-image:linear-gradient(to right, #00313c, #e31c79);
+    background-image:linear-gradient(90deg, #00313c, #e31c79);
 }
 
 h1 { 
@@ -13,8 +13,7 @@ h1 {
     justify-content: space-evenly;
 }
 
-input
-{
+input {
     font-size:24px;
     height:50px;
     width:50px;
@@ -23,18 +22,18 @@ input
     font-family: 'Abril Fatface', cursive;
 }
 
-.buttons
-{
+.buttons {
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
 
-.row{
+.row {
   text-align:center;
   /*background-image:linear-gradient(to right, #00313c, #e31c79);*/
   
 }
+
 #choices{
   display:flex;
   justify-content:space-between;
