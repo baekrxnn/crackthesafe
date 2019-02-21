@@ -54,7 +54,7 @@ $(document).ready(function(){
         if (guessOne===randomNumber1) {
             numbersInPlace++;
             numbersCorrect++;
-        } else if((guessOne===randomNumber1)
+        } else if((guessOne===randomNumber2)
                 ||(guessOne===randomNumber3)
                 ||(guessOne===randomNumber4)) {
                     numbersCorrect++;
